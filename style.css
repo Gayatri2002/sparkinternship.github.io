@@ -1,0 +1,175 @@
+:root{
+    --primary:#CAB8FF;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+
+}
+
+body{
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+}
+header{
+    
+    background-color: var(--primary);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 120%);
+    
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    margin-left: 15rem;
+    
+}
+
+
+header nav .left a:hover{
+    color:var(--dark);
+}
+
+header nav{
+    padding: 1rem 0;
+    background-color: #82ACFF;
+    opacity: var(--light);
+}
+
+header nav .a{
+    color: white;
+}
+
+header nav .branding{
+    
+    align-self: flex-start;
+    margin-top: 5rem;
+    margin-right:3rem ;
+}
+.me{
+    padding:3rem 0;
+}
+
+.me .left img{
+    width: 400px;
+}
+
+
+.me .right h6{
+    font-size: 1.4rem;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+}
+.me .right h1{
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    color: #C400FF;
+}
+.me .right h1 span{
+    color: #7027A0;
+}
+.me .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    color: var(--pure);
+}
+
+
+
+.me .right{
+    margin-top: -20rem;
+    margin-left: 30rem;
+}
+
+
+
+
+
+@media (max-width: 1024px){
+    header #main-nav{
+        display:none;
+    }
+}
+
+.site-main-wrapper{
+    position: relative;
+}
+
+.hamberger{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.hamberger img{
+    width: 30px;
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: var(--dark);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+}
+.open{
+    transform: translateX(0);
+}
+.times{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.times img{
+    width: 30px;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+}
+
+.mobile-nav ul li a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 2rem;
+}
